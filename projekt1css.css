@@ -22,7 +22,9 @@ body
 }
 #navbar
 {
-    background-color: rgb(54, 42, 19);
+    animation-name: colorchange;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
     grid-area: gnavbar;
     display: flex;
     flex-direction: row;
@@ -138,4 +140,10 @@ main
     bottom: 1;
     font-size:16px;
 }
+}
+@keyframes colorchange
+{
+   0% {background-color:rgb(255 ,226 ,168);}
+   100%{background-color: rgb(54, 42, 19);}
+
 }
